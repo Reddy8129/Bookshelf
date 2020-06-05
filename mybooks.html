@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book</title>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="turn.js-master/turn.min.js"></script>
+
+
+
+
+	<style type="text/css">
+		body{
+				background-color: blue;
+				overflow: hidden;
+				text-align: center;
+				background-image: url(bg.png);
+				background-position: center;
+
+		}
+
+		.first{
+			background-color: #ffffff;
+			width: 98%;
+			height: 650px;
+			position: fixed;
+		}
+		.firstpage{
+			font-family: Bradley Hand ITC;
+			transform: rotate(-30deg);
+			font-size: 150px;
+		}	
+		img{
+			padding-top: 25px;
+			padding-left: 7px;
+			width: 98%;
+			height:600px;
+
+		}
+
+
+		.book{
+			position: absolute;
+			transform-style: preserve-3d;
+			transform: translate(-50%,-50%) perspective(200px);
+			box-shadow: inset 300px 0 50px rgba(0,0,0,.5) 0 20px 100px rgba(0,0,0,.5);
+			transition: .1s; 
+		}
+		.book:hover{
+			transform: translate(-50%,-50%) perspective(200px) ;
+			box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0px 10px 100px rgba(0,0,0,.5);
+
+		}
+		#flipbook{
+				margin: 0 auto;
+			
+        }
+
+        #flipbook.shadow,
+		#flipbook.shadow{
+ 				-webkit-box-shadow: 0 4px 10px #666;
+    			-moz-box-shadow: 0 4px 10px #666;
+    			-ms-box-shadow: 0 4px 10px #666;
+   				-o-box-shadow: 0 4px 10px #666;
+       			 box-shadow: 0 4px 10px #666;
+        }
+		#flipbook.page-wrapper{
+ 	    		-webkit-perspective:2000px;
+   				-moz-perspective: 2000px;
+  				 -ms-perspective: 2000px;
+  				 perspective: 2000px;
+}
+#flipbook.page{
+	background-color:#ccc;
+}
+	</style>
+</head>
+<body>
+	<h1 style="color: #ffffff">Magazine</h1>
+
+<div id="flipbook" class="book">
+
+	<div class="first">
+		<h2 class="firstpage">Fashion</h2>
+	</div>
+
+	<div class="hard">
+		
+			<img src="http://18.224.23.171/images/magazine/p1.jpg">
+		
+	</div>
+	<div>
+	
+		
+			<img src="http://18.224.23.171/images/magazine/p2.jpg">
+		
+	</div>
+	<div>
+	
+		
+			<img src="http://18.224.23.171/images/magazine/p3.jpg">
+		
+	</div>
+	<div>
+	
+		
+			<img src="http://18.224.23.171/images/magazine/p4.jpg">
+		
+	</div>
+	<div>
+	
+		
+			<img src="http://18.224.23.171/images/magazine/p5.jpg">
+		
+	</div>
+	<div>
+	
+		
+			<img src="http://18.224.23.171/images/magazine/p6.jpg">
+		
+	</div>
+	<div>
+	
+		
+			<img src="http://18.224.23.171/images/magazine/p7.jpg">
+		
+	</div>
+	<div>
+	
+		
+			<img src="http://18.224.23.171/images/magazine/p8.jpg">
+		
+	</div>
+	<div>
+	
+		
+			<img src="http://18.224.23.171/images/magazine/p9.jpg">
+		
+	</div>
+	<div class="hard">
+		
+		
+			<img src="http://18.224.23.171/images/magazine/p10.jpg">
+		
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+	
+ $('#flipbook').turn({
+ 	width:1000,
+ 	height:650,
+ 	gradients: true,
+ 	page:2,
+ 	acceleration:true
+
+ });
+
+
+
+</script>
+
+</body>
+
+
+
+</html>
